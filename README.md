@@ -5,10 +5,13 @@
    python3 -m venv env
 
 2. **Activate the virtual environment**:
+    ```sh
     source env/bin/activate
 
-3. **Install the required packages**:
+4. **Install the required packages**:
+   ```sh
     pip install -r requirements.txt
 
-4. **Install the required packages**:
+6. **Install the required packages**:
+   ```sh
     python3 visual.py
