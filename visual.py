@@ -1,10 +1,13 @@
 # Required Libraries
 import subprocess
 import sys
+import pip
+import subprocess
+import sys
 
 # Install required packages
-subprocess.check_call([sys.executable, "-m", "pip", "install", "dash"])
 subprocess.check_call([sys.executable, "-m", "pip", "install", "flask"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "dash"])
 subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
 
 from flask import Flask, render_template
@@ -62,8 +65,7 @@ def update_dashboard(audience_level):
     }
 
     # Plot Data
-    fig = px.bar(pip install -r requirements.txt
-        data,
+    fig = px.bar(data,
         x='Feature',
         y=['Bias_Score', 'Mitigated_Score'],
         barmode='group',
